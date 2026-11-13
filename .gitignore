@@ -1,0 +1,25 @@
+# dependencies
+/node_modules
+
+# next.js
+/.next/
+/.next-showcase/
+/out/
+
+# production
+/build
+
+# env
+.env
+.env*.local
+
+# service account key
+service-account.json
+
+# local SQLite data store (real synced sheet data before Supabase is set up)
+/local-data/
+
+# misc
+.DS_Store
+*.tsbuildinfo
+npm-debug.log*

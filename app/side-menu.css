@@ -1,0 +1,27 @@
+/* The tab (the logo while shut, an arrow while open) that opens and closes the left menu. */
+@keyframes side-nudge {
+  0%, 100% { transform: translateX(0); }
+  50% { transform: translateX(4px); }
+}
+.side-handle {
+  transition: left 0.28s ease;
+  box-shadow: 0 6px 16px rgba(30, 80, 204, 0.25);
+}
+.side-handle .side-handle-arrow {
+  animation: side-nudge 1.6s ease-in-out infinite;
+}
+.side-handle[aria-expanded="true"] .side-handle-arrow {
+  animation: none;
+  transform: rotate(180deg);
+}
+/* While shut the menu is also taken out of the tab order, once it has finished sliding in. */
+.side-panel {
+  transition: width 0.28s ease, padding 0.28s ease, visibility 0s linear 0.28s;
+}
+.side-panel[data-open="true"] {
+  transition: width 0.28s ease, padding 0.28s ease, visibility 0s;
+}
+@media (prefers-reduced-motion: reduce) {
+  .side-handle .side-handle-arrow { animation: none; }
+  .side-panel, .side-handle { transition: none; }
+}
