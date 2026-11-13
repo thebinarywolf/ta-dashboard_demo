@@ -16,7 +16,7 @@ export default async function PendingPage() {
     <main className="flex min-h-screen items-center justify-center bg-gradient-to-br from-[#dbe8fb] via-[#eef4fd] to-white p-6">
       <div className={`${GLASS_PANEL} w-full max-w-md p-8 text-center`}>
         {/* eslint-disable-next-line @next/next/no-img-element */}
-        <img src="/logo.png" alt="White Gold" width={289} height={128} className="mx-auto mb-5 h-14 w-auto rounded-lg" />
+        <img src="/logo.svg" alt="TA Dashboard" width={289} height={128} className="mx-auto mb-5 h-14 w-auto rounded-lg" />
         <h1 className="text-lg font-bold text-[#0e1b3d]">
           Access pending
         </h1>

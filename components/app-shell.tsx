@@ -45,7 +45,7 @@ export default async function AppShell({
       {!SHOWCASE && backend === "fixtures" && (
         <div className="mx-auto mt-4 max-w-6xl px-3 sm:px-6">
           <div className="rounded-full bg-amber-50/80 backdrop-blur px-5 py-2 text-center text-xs font-medium text-amber-700 border border-amber-100">
-            Demo mode — showing sample data. Sync your Google Sheet from the
+            Sample data — showing generated figures. Sync your Google Sheet from the
             Admin panel to see real data.
           </div>
         </div>

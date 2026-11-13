@@ -40,7 +40,7 @@ function seedShowcase(): DemoUser[] {
   for (const [i, name] of ["Nisha Rao", "Varun Shetty"].entries()) {
     users.push({
       id: `demo-pending-${i}`,
-      email: `${name.split(" ")[0].toLowerCase()}@demo.test`,
+      email: `${name.toLowerCase().replace(" ", ".")}@example.com`,
       full_name: name,
       role: "pending",
       status: "pending",
@@ -59,8 +59,8 @@ function seed(): DemoUser[] {
   return [
     {
       id: "demo-admin",
-      email: "admin@demo.test",
-      full_name: "Demo Admin",
+      email: "alex.morgan@example.com",
+      full_name: "Alex Morgan",
       role: "admin",
       status: "approved",
       requested_at: now,
@@ -69,7 +69,7 @@ function seed(): DemoUser[] {
       // Seeded as given for local demo login only. This has no bearing on
       // any real account — when Supabase is set up for real, you choose
       // your own password during signup.
-      password: "demo1234",
+      password: "sample1234",
     },
   ];
 }

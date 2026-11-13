@@ -103,7 +103,7 @@ export async function middleware(request: NextRequest) {
 
 export const config = {
   // Excludes anything under _next/api, plus any request whose last path
-  // segment has a file extension (logo.png, robots.txt, etc.) — public/
+  // segment has a file extension (logo.svg, robots.txt, etc.) — public/
   // assets need to load even for signed-out visitors (e.g. the logo on the
   // login page itself), and gating them here doesn't protect anything since
   // they're static files, not data.

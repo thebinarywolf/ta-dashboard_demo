@@ -98,7 +98,7 @@ export default function SideMenu({ items, footer }: { items: NavItem[]; footer: 
       >
         <Link href="/dashboard" className="flex shrink-0 items-center px-1 pb-2.5">
           {/* eslint-disable-next-line @next/next/no-img-element */}
-          <img src="/logo.png" alt="White Gold" width={289} height={128} className="h-11 w-auto rounded-lg" />
+          <img src="/logo.svg" alt="TA Dashboard" width={289} height={128} className="h-11 w-auto rounded-lg" />
         </Link>
 
         <nav className="flex min-h-0 flex-1 flex-col gap-1 overflow-y-auto overflow-x-hidden">
@@ -188,9 +188,9 @@ export default function SideMenu({ items, footer }: { items: NavItem[]; footer: 
           </svg>
         ) : (
           <span className="flex flex-col items-center gap-0.5">
-            {/* The White Gold mark, with a "MENU" label and an arrow, is the button while the menu is shut. */}
+            {/* The logo mark, with a "MENU" label and an arrow, is the button while the menu is shut. */}
             {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img src="/logo-mark.png" alt="" width={192} height={192} className="h-[56px] w-[56px] object-cover lg:h-[50px] lg:w-[50px]" />
+            <img src="/logo-mark.svg" alt="" width={192} height={192} className="h-[56px] w-[56px] object-cover lg:h-[50px] lg:w-[50px]" />
             <span className="text-[11px] font-extrabold leading-none tracking-[0.14em]">MENU</span>
             <svg
               width="18"

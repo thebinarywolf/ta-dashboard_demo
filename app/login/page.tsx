@@ -54,7 +54,7 @@ export default function LoginPage() {
     <main className="flex min-h-screen items-center justify-center bg-gradient-to-br from-[#dbe8fb] via-[#eef4fd] to-white p-6">
       <div className={`${GLASS_PANEL} w-full max-w-sm p-8`}>
         {/* eslint-disable-next-line @next/next/no-img-element */}
-        <img src="/logo.png" alt="White Gold" width={289} height={128} className="mx-auto mb-5 h-14 w-auto rounded-lg" />
+        <img src="/logo.svg" alt="TA Dashboard" width={289} height={128} className="mx-auto mb-5 h-14 w-auto rounded-lg" />
         <h1 className="text-center text-xl font-bold text-[#0e1b3d]">
           Talent Acquisition Dashboard
         </h1>

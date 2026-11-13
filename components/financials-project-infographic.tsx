@@ -368,7 +368,7 @@ export function PrintReport({ report, basedOn }: { report: ProjectReport; basedO
     <div id="project-print-root" className="space-y-4 bg-white p-0 text-[#0e1b3d]">
       <header className="flex items-end justify-between border-b-2 border-brand-blue pb-3">
         <div>
-          <p className="text-[10px] font-bold uppercase tracking-wide text-brand-blue">White Gold · people cost planning</p>
+          <p className="text-[10px] font-bold uppercase tracking-wide text-brand-blue">People cost planning</p>
           <h1 className="text-2xl font-extrabold">{p.name}</h1>
           <p className="text-xs text-slate-500">
             {kind} · starts {monthLabel(p.startKey)} · amounts in rupees

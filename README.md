@@ -4,7 +4,7 @@ A Talent Acquisition analytics dashboard: hiring pipeline, recruiter performance
 sources, funnel, attrition and people-cost views, with role-based access.
 
 This copy runs on **made-up data** (generated on start-up, nothing real), so it can be
-shown publicly. It opens straight into the dashboard as a demo admin — there is no
+shown publicly. It opens straight into the dashboard as a sample admin — there is no
 sign-in — and every tab works as it does in the full product.
 
 **Stack:** Next.js 14 (App Router) · TypeScript · React 18 · Tailwind CSS · Recharts.
@@ -42,7 +42,7 @@ Open http://localhost:3000 (or `npm run showcase` for port 3300).
 3. If the build complains about `node:sqlite`, set **Settings → General → Node.js Version**
    to 22.x or 24.x and redeploy.
 
-## Where the demo data comes from
+## Where the sample data comes from
 
 `lib/showcase/generate.ts` builds about 170 positions, 2,300 interview rounds, 600 people
 with exit reasons and two years of finance figures into an in-memory database when the
@@ -50,5 +50,5 @@ server starts. It uses a fixed seed (the same data every time) and dates counted
 today (it always looks current). Edit the counts, names and lists at the top of that file
 to change it; restart to see the result.
 
-`lib/showcase/flag.ts` holds the switch and the demo admin. Sync is disabled, and the
+`lib/showcase/flag.ts` holds the switch and the sample admin. Sync is disabled, and the
 Supabase / Google / HR-system settings are ignored.

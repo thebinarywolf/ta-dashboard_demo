@@ -21,7 +21,7 @@ export default function SadLogo({ size = 72 }: { size?: number }) {
         ))}
       </svg>
       {/* eslint-disable-next-line @next/next/no-img-element */}
-      <img src="/logo-mark.png" alt="" width={192} height={192} className="sad-mark mt-6 rounded-[22%]" style={{ width: size, height: size }} />
+      <img src="/logo-mark.svg" alt="" width={192} height={192} className="sad-mark mt-6 rounded-[22%]" style={{ width: size, height: size }} />
     </div>
   );
 }

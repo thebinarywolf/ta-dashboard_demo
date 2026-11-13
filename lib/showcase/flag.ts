@@ -8,7 +8,7 @@
 //     if their settings are present;
 //   - the data is generated on start-up into an in-memory database
 //     (lib/showcase/generate.ts), with dates relative to today;
-//   - there is no sign-in: everyone is the demo admin below;
+//   - there is no sign-in: everyone is the sample admin below;
 //   - Sync now and automatic sync are switched off.
 //
 // No Node-only imports here: middleware (Edge) and client components read it.
@@ -23,19 +23,19 @@ export interface ShowcaseLogin {
   label: string;
 }
 
-// Made-up accounts on a reserved test domain. Passwords are public on purpose:
+// Made-up accounts on a reserved example domain. Passwords are public on purpose:
 // they only open this sample-data copy.
 export const SHOWCASE_LOGINS: ShowcaseLogin[] = [
-  { email: "admin@demo.test", password: "demo1234", fullName: "Demo Admin", role: "admin", label: "Admin — everything, incl. user approval" },
-  { email: "viewer@demo.test", password: "demo1234", fullName: "Demo Viewer", role: "viewer", label: "Viewer — the tabs an admin allows" },
-  { email: "recruiter@demo.test", password: "demo1234", fullName: "Demo Recruiter", role: "recruiter", label: "Recruiter" },
+  { email: "alex.morgan@example.com", password: "sample1234", fullName: "Alex Morgan", role: "admin", label: "Admin — everything, incl. user approval" },
+  { email: "sam.taylor@example.com", password: "sample1234", fullName: "Sam Taylor", role: "viewer", label: "Viewer — the tabs an admin allows" },
+  { email: "jordan.lee@example.com", password: "sample1234", fullName: "Jordan Lee", role: "recruiter", label: "Recruiter" },
 ];
 
 // The one account everybody is in the showcase (there is no sign-in).
 export const SHOWCASE_ADMIN = {
   id: "demo-admin",
-  email: "admin@demo.test",
-  full_name: "Demo Admin",
+  email: "alex.morgan@example.com",
+  full_name: "Alex Morgan",
   role: "admin",
   status: "approved",
   requested_at: "2026-01-01T00:00:00.000Z",
